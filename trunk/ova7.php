@@ -1,14 +1,6 @@
-<?php
-
-header('Content-type: text/xml');
-header('Pragma: public');
-header('Cache-control: private');
-header('Expires: -1');
-$random = substr(number_format(time() * rand(),0,'',''),0,10);
-
-echo '<config>
+<config>
    <ova.title>
-       Video Ads - streaming.eratvonline.com
+       Video Ads - indostar-tv.Com
    </ova.title>
    <ova.json>
        {
@@ -18,9 +10,14 @@ echo '<config>
 
           "ads": {
               "skipAd": {
-                  "enabled": true,
+                  "enabled": false,
                   "showAfterSeconds": 6
               },
+          "notice": {
+              "show": true,
+              "region": "my-ad-notice",
+              "message": "Your TV Channel will resume in _countdown_ second(s)"
+            },
               "providers": {
                   "enforceSettingSubscribeRTMP":true,
                   "subscribeRTMP": false
@@ -28,12 +25,9 @@ echo '<config>
               "schedule": [
                   {
                       "position": "pre-roll",
-                      "tag": "http://serve.vdopia.com/adserver/vastxml/f65cc920fba56972c31af69c6d0c1936/preroll/category:LF;api_test:false;format:vast;tagtype:publisher;ru=http://www.poztmo.com;rand='.$random.'"
-                 }
+                      "tag": "http://serve.vdopia.com/adserver/vastxml/82949eefa5da26c036d38d15a033f2c1/preroll/category:EN;api_test:false;format:both;tagtype:publisher;ru=http://indostar-tv.com;rand=1938007413"                 }
               ]
           }
        }
    </ova.json>
-</config>';
-?>
-
+</config>
