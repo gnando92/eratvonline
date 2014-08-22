@@ -1,0 +1,25 @@
+<config><ova.title>
+       Video Ads - streamingtv.eratvonline.com
+   </ova.title><ova.json>
+       {
+          "debug": {
+              "levels": "fatal, config, vast_template, vpaid, http_calls, playlist, api"
+          },
+
+          "ads": {
+              "skipAd": {
+                  "enabled": true,
+                  "showAfterSeconds": 6
+              },
+              "providers": {
+                  "enforceSettingSubscribeRTMP":true,
+                  "subscribeRTMP": false
+              },
+              "schedule": [
+                  {
+                      "position": "pre-roll",
+                      "tag": "http://serve.vdopia.com/adserver/vastxml/82949eefa5da26c036d38d15a033f2c1/preroll/category:EN;api_test:false;format:both;tagtype:publisher;ru=http://indostar-tv.com;rand=$random"                 }
+              ]
+          }
+       }
+   </ova.json></config>
