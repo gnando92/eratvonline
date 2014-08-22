@@ -1,6 +1,14 @@
-<config>
+<?php
+
+header('Content-type: text/xml');
+header('Pragma: public');
+header('Cache-control: private');
+header('Expires: -1');
+$random = substr(number_format(time() * rand(),0,'',''),0,10);
+
+echo '<config>
    <ova.title>
-       Video Ads - indostar-tv.Com
+       Video Ads - streaming.eratvonline.com
    </ova.title>
    <ova.json>
        {
@@ -10,14 +18,9 @@
 
           "ads": {
               "skipAd": {
-                  "enabled": false,
+                  "enabled": true,
                   "showAfterSeconds": 6
               },
-          "notice": {
-              "show": true,
-              "region": "my-ad-notice",
-              "message": "Your TV Channel will resume in _countdown_ second(s)"
-            },
               "providers": {
                   "enforceSettingSubscribeRTMP":true,
                   "subscribeRTMP": false
@@ -25,9 +28,12 @@
               "schedule": [
                   {
                       "position": "pre-roll",
-                      "tag": "http://serve.vdopia.com/adserver/vastxml/82949eefa5da26c036d38d15a033f2c1/preroll/category:EN;api_test:false;format:both;tagtype:publisher;ru=http://indostar-tv.com;rand=1938007413"                 }
+                      "tag": "http://delivery.ambient-platform.com/247/xmlvideoad/zid_1401690255/wid_1401690137/type_inline/cb_[timestamp]category:LF;api_test:false;format:vast;tagtype:publisher;ru=http://streamingseru.com;rand='.$random.'"
+                 }
               ]
           }
        }
    </ova.json>
-</config>
+</config>';
+?>
+
