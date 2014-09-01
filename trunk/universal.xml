@@ -1,0 +1,5 @@
+<config>
+<innityadsplugin.json>
+{ "ads": { "lightbox":false, "skipAd": { "enabled": true, "showAfterSeconds": 5 }, "schedule":[ { "position":"pre-roll", "tag":"http://delivery.ambient-platform.com/247/xmlvideoad/zid_1401690255/wid_1401690137/type_inline/cb_[timestamp]/category:EN;api_test:false;format:both;tagtype:publisher;ru=http://www.indostreamix.com;rand=$random" } , { "position":"enroll", "tag":"http://serve.vdopia.com/adserver/vastxml/cdbd302099c27a30024cf223351f4223/preroll/category:EN;api_test:false;format:both;tagtype:publisher;ru=http://www.indostreamix.com;rand=$random" } ] } }
+</innityadsplugin.json>
+</config>
