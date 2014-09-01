@@ -28,7 +28,7 @@ echo '<config>
               "schedule": [
                   {
                       "position": "pre-roll",
-                      "tag": "http://serve.vdopia.com/adserver/vastxml/f65cc920fba56972c31af69c6d0c1936/preroll/category:LF;api_test:false;format:vast;tagtype:publisher;ru=http://www.poztmo.com;rand='.$random.'"
+  "tag": "http://delivery.ambient-platform.com/247/xmlvideoad/zid_1401690255/wid_1401690137/type_inline/cb_[timestamp]/category:LF;api_test:false;format:vast;tagtype:publisher;ru=http://www.streamingseru.com;rand='.$random.'"
                  }
               ]
           }
